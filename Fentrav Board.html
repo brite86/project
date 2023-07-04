@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fentrav Board</title>
+    <link rel="stylesheet" href="./Fentrav Board_files/main.css">
+</head>
+<body>
+    <div class="fentrav">
+    
+<div class="fentrav__column" data-id="1">
+        <div class="fentrav__column-title">Todo</div>
+        <div class="fentrav__column-items"><div class="fentrav__dropzone"></div><div class="fentrav__item" draggable="true" data-id="78539">
+          <div class="fentrav__item-input" contenteditable="">create user profile</div>
+        <div class="fentrav__dropzone"></div></div><div class="fentrav__item" draggable="true" data-id="21219">
+          <div class="fentrav__item-input" contenteditable="">update navbar</div>
+        <div class="fentrav__dropzone"></div></div><div class="fentrav__item" draggable="true" data-id="9464">
+          <div class="fentrav__item-input" contenteditable="">create signup</div>
+        <div class="fentrav__dropzone"></div></div></div>
+        <button class="fentrav__add-item" type="button">+Add a card</button>
+    </div><div class="fentrav__column" data-id="2">
+        <div class="fentrav__column-title">In Progress</div>
+        <div class="fentrav__column-items"><div class="fentrav__dropzone"></div><div class="fentrav__item" draggable="true" data-id="90820">
+          <div class="fentrav__item-input" contenteditable="">create FE for add a plan</div>
+        <div class="fentrav__dropzone"></div></div><div class="fentrav__item" draggable="true" data-id="32637">
+          <div class="fentrav__item-input" contenteditable=""></div>
+        <div class="fentrav__dropzone"></div></div></div>
+        <button class="fentrav__add-item" type="button">+Add a card</button>
+    </div><div class="fentrav__column" data-id="3">
+        <div class="fentrav__column-title">Done</div>
+        <div class="fentrav__column-items"><div class="fentrav__dropzone"></div><div class="fentrav__item" draggable="true" data-id="14396">
+          <div class="fentrav__item-input" contenteditable=""></div>
+        <div class="fentrav__dropzone"></div></div><div class="fentrav__item" draggable="true" data-id="61470">
+          <div class="fentrav__item-input" contenteditable=""></div>
+        <div class="fentrav__dropzone"></div></div><div class="fentrav__item" draggable="true" data-id="15820">
+          <div class="fentrav__item-input" contenteditable=""></div>
+        <div class="fentrav__dropzone"></div></div><div class="fentrav__item" draggable="true" data-id="28574">
+          <div class="fentrav__item-input" contenteditable=""></div>
+        <div class="fentrav__dropzone"></div></div></div>
+        <button class="fentrav__add-item" type="button">+Add a card</button>
+    </div></div>
+   <script src="./Fentrav Board_files/main.js.download" type="module"></script> 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
