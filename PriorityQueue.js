@@ -1,4 +1,5 @@
-class PriorityQueue {
+import fentravAPI from "../api/fentravAPI";
+export default class PriorityQueue {
     constructor(){
         this.items = []
     }
@@ -52,7 +53,7 @@ sizeOfQueue(){
 
 
 
-let myqueue = new PriorityQueue();
+    let myqueue = new PriorityQueue();
 
 myqueue.enque(Todo, 3);
 myqueue.enque(Inprogress, 1)
