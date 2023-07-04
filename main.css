@@ -1,4 +1,4 @@
-.task-container{
+.board{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -8,68 +8,61 @@
     background-size: cover;
 
 }
- 
-#card-form {
-padding: 32px 32px 0;
-}
- #card-form button {
-    padding: 12px 32px;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
-    background: #ffffff;
-    color: black;
-    font-weight:bold;
-    font-size:14px;
-    cursor:pointer;
- }
-
-.lanes {
+.fentrav{
     display: flex;
-    align-items: flex-start;
-    justify-content: start;
-    gap: 12px;
-    padding: 24px 32px;
-    overflow: scroll;
-    height: 100%;
-    
-    
-
-    
-
-}
- .heading{
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 8px;
-
-    
-}
-
-.swim-lane  {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    padding: 30px;
+    width: 750px;
     background: #959f913d;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
-    padding: 10px;
-    border-radius: 4px;
-    width: 225px;
-    min-height: 120px;
-    flex-shrink: 0;
+    border-radius: 5px;
 }
-.task{
+.fentrav *{
+    font-family: sans-serif;
+}
+.fentrav__column{
+    flex: 1;
+}
+.fentrav__column:not(:last-child){
+    margin-right: 30px;
+}
+.fentrav__column-title{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color:white;
+    user-select: none;
+}
+.fentrav__item-input{
+    padding: 10px 15px;
+    box-sizing: border-box;
     background: white;
-    color: black;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
-    padding: 12px;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: move;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.is-dragging{
-    scale: 1.05;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
-    background: rgb(50,50,50);
+.fentrav__dropzone{
+    height: 20px;
+    transition: background 0.15s, height0.15s;
+}
+.fentrav__dropzone--active{
+    height: 40px;
+    background: rgba(0,0,0,0.25);
+
+}
+.fentrav__add-item{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
     color: white;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fentrav__btn-add{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
